@@ -3,5 +3,9 @@
 
 void print_welcome(char version[])
 {
-  printf("==================================\n%s\n%s%s\n==================================\n", "Welcome to the C-Shore, a C-Shell!", "CurrentVersion: ", version);
+  char divider[] = "==================================\n";
+  char welcomeMessage[] = "Welcome to the C-Shore, a C-Shell!";
+  printf("%s", divider);
+  printf("%s\n%s%s\n", welcomeMessage, "CurrentVersion: ", version);
+  printf("%s", divider);
 }

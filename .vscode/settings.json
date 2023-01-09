@@ -1,5 +1,8 @@
 {
   "files.associations": {
-    "startup.h": "c"
+    "startup.h": "c",
+    "repl.h": "c",
+    "stddef.h": "c",
+    "string.h": "c"
   }
 }
