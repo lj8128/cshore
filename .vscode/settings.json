@@ -3,6 +3,10 @@
     "startup.h": "c",
     "repl.h": "c",
     "stddef.h": "c",
-    "string.h": "c"
+    "string.h": "c",
+    "file_print_cmds.h": "c",
+    "stdlib.h": "c",
+    "errors.h": "c",
+    "ansi.h": "c"
   }
 }
