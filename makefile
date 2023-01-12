@@ -1,5 +1,5 @@
-all: main.o startup.o repl.o ansi.o errors.o file_print_cmds.o file_nav_cmds.o file_create_cmds.o
-	gcc main.o startup.o repl.o ansi.o errors.o file_print_cmds.o file_nav_cmds.o file_create_cmds.o -o cshore
+all: main.o startup.o repl.o ansi.o errors.o file_print_cmds.o file_nav_cmds.o file_create_cmds.o util.o
+	gcc main.o startup.o repl.o ansi.o errors.o file_print_cmds.o file_nav_cmds.o file_create_cmds.o util.o -o cshore
 
 main.o: main.c
 	gcc -c main.c
@@ -24,6 +24,9 @@ file_nav_cmds.o: $(CURDIR)/src/file_nav_cmds.c
 
 file_create_cmds.o: $(CURDIR)/src/file_create_cmds.c
 	gcc -c $(CURDIR)/src/file_create_cmds.c
+
+util.o: $(CURDIR)/src/util.c
+	gcc -c $(CURDIR)/src/util.c
 
 .PHONY: clean
 clean:

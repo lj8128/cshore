@@ -1,0 +1,4 @@
+1. Implement touch, chmod, rm -rf, the 
+    redirect operator (>>), and echo
+2. Review TLCL Ch. 9;
+2. Clean up makefile;

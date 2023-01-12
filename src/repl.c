@@ -8,6 +8,7 @@
 #include "../include/file_print_cmds.h"
 #include "../include/file_nav_cmds.h"
 #include "../include/file_create_cmds.h"
+#include "../include/util.h"
 
 int run_REPL()
 {
@@ -35,12 +36,19 @@ int run_REPL()
       ls();
     }
     else if (strstr(input, "cd ") == input) {
-      char* path = malloc(strlen(input) - 3);
-      memmove(path, &input[3], strlen(input)-3);
+      const char* path = extract_path(input, 2);
       cd(path);
       free((void *) path);
     }
-    else
+    else if(strstr(input, "mkdir ") == input) {
+      const char* path = extract_path(input, 5);
+      my_mkdir(path);
+      free((void *) path);
+    } else if(strstr(input, "touch ") == input) {
+      const char* path = extract_path(input, 5);
+      touch(path);
+      free((void*) path);
+    } else
     {
       no_cmd_err(input);
     }
