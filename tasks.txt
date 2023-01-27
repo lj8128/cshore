@@ -1,4 +1,5 @@
-1. Implement touch, chmod, rm -rf, the 
+0. Read relevant parts of Ch.12 and Ch. 14 of
+   the GNU C Library Manual
+2. Implement ls -l, chmod, rm -rf, the 
     redirect operator (>>), and echo
-2. Review TLCL Ch. 9;
-2. Clean up makefile;
+3. Clean up makefile;

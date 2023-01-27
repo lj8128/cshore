@@ -7,6 +7,10 @@
     "file_print_cmds.h": "c",
     "stdlib.h": "c",
     "errors.h": "c",
-    "ansi.h": "c"
+    "ansi.h": "c",
+    "pid_print_cmds.h": "c",
+    "stdio.h": "c",
+    "process_print_cmds.h": "c",
+    "file_nav_cmds.h": "c"
   }
 }
